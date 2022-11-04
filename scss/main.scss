@@ -1,3 +1,11 @@
+@use 'sass:math';
+@use 'other';
+$constastColor: cornflowerblue;
+$appWidth: 200px;
+
+@function calcAppWidth($width) {
+  @return math.div($width,4);
+}
 html, body {
   height: 100%;
   width: 100%;
@@ -12,15 +20,15 @@ html, body {
 }
 
 #app div {
-  margin-top: 50px; 
+  margin-top: calcAppWidth($appWidth); 
 }
   
 #app div h1 {
-  color: slategrey; 
+  color: $constastColor; 
 }
 
 #app div ul {
-  width: 200px;
+  width: $appWidth;
   margin: 0 auto;
   text-align: left; 
 }
@@ -32,5 +40,5 @@ html, body {
 }
 
 #app div h2 i {
-  color: slategrey; 
+  color: $constastColor; 
 }

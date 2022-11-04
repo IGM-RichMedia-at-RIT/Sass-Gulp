@@ -4,11 +4,14 @@
   "description": "A Simple Example using React apps",
   "main": "./server/app.js",
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack webpackTask",
     "nodemon": "nodemon -e js,html,css --watch ./hosted --watch ./server --watch ./hosted ./server/app.js ",
     "start": "node ./server/app.js",
-    "pretest": "eslint ./server --fix",
-    "test": "echo \"Tests complete\""
+    "pretest": "gulp lintTask",
+    "test": "echo \"Tests complete\"",
+    "sass": "gulp sassTask",
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "author": "Cody Van De Mark / Austin Willoughby",
   "license": "Apache 2.0",
