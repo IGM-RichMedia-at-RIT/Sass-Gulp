@@ -22,8 +22,10 @@
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-react": "^7.28.5",
+    "@eslint/js": "^10.0.1",
     "babel-loader": "^10.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
     "gulp": "^5.0.1",
     "gulp-eslint-new": "^2.5.0",
     "gulp-sass": "^6.0.1",
